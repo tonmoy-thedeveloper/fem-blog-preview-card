@@ -61,6 +61,15 @@ Example CSS snippet I’m proud of:
 }
 ```
 
+### Continued Development
+
+In future projects, I want to focus on:
+
+- Creating fully responsive layouts using Flexbox and Grid.
+- Improving accessibility for all interactive elements.
+- Experimenting with advanced CSS effects like shadows and neumorphism.
+- Optimizing CSS and assets for better performance.
+
 ## Author
 
 - Frontend Mentor: [https://www.frontendmentor.io/profile/tonmoy-thedeveloper]
