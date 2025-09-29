@@ -1,0 +1,107 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+/* Reusable */
+:root {
+  /* Colors */
+  --color-yellow: #f4d04e;
+  --color-dark-gray: #111;
+  --color-light-gray: #6b6b6b;
+  --color-white: #fff;
+
+  /* Font sizes */
+  --font-size-lg: 24px;
+  --font-size-md: 16px;
+  --font-size-sm: 14px;
+
+  /* Line Height */
+  --line-height: 150%;
+
+  /* Font weights */
+  --font-weight-extrabold: 800;
+  --font-weight-medium: 500;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1.5rem;
+}
+body {
+  font-family: "Figtree", sans-serif;
+  background: var(--color-yellow);
+  color: var(--color-dark-gray);
+  line-height: var(--line-height);
+}
+
+#wrapper {
+  height: 100vh;
+  align-content: center;
+}
+.card {
+  margin-inline: auto;
+  border-radius: 20px;
+  max-width: 384px;
+  padding: var(--spacing-lg);
+  background: var(--color-white);
+  box-shadow: inset 0 0 0 1px var(--color-dark-gray),
+    8px 8px 0 0 var(--color-dark-gray);
+  /* box-shadow: 8px 8px 0 0 var(--color-dark-gray); */
+}
+.card-image {
+  border-radius: 10px;
+}
+.card-content {
+  margin: var(--spacing-lg) 0;
+}
+.card-tag {
+  background: var(--color-yellow);
+  display: inline-flex;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--spacing-xs);
+}
+.card-tag p {
+  text-transform: capitalize;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-extrabold);
+}
+.publish-date {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  margin: var(--spacing-md) 0;
+}
+.card-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-extrabold);
+  margin-bottom: var(--spacing-md);
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.card-title:hover {
+  color: var(--color-yellow);
+}
+.card-title:focus {
+  color: var(--color-yellow);
+}
+.blog-content {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+.card-author h3 {
+  text-transform: capitalize;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-extrabold);
+}
